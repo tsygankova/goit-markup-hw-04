@@ -136,20 +136,21 @@ span{color:var(--logo-color);}
 }
 
 .header-email::before, .header-phone::before{
-width:20px;
-height: 20px;
-margin-right: 5px;
-content: "";
-background-color: teal;
-cursor: pointer;
+  width:20px;
+  height: 20px;
+  margin-right: 5px;
+  background-repeat:no-repeat;
+  background-position: 50% 50%;
+  content: "";
+  cursor: pointer;
 }
 
 .header-email::before{
-  conternt: "";
+  background-image: url(../images/envelope.svg);
 }
 
 .header-phone::before{
-  content: "";
+  background-image: url(../images/smartphone.svg);
   }
 
 .header-email-link, 
@@ -242,14 +243,13 @@ cursor: pointer;
 
 .features-item::before{
   display: block;
-  height: 70px;
+  height: 120px;
   content:"";
   padding-bottom: 25px;
   padding-top: 25px;
   padding-left: 100px;
   padding-right: 100px;
-  background-image: url(../images/antenna.png);
-  background-size: contain;
+  background-size: auto;
   background-position: center;
   background-repeat:no-repeat;
   background-color: var(--section-color);
@@ -257,8 +257,24 @@ cursor: pointer;
   border-radius: 4px;
 }
 
+.features-item:nth-child(1)::before{
+  background-image: url(../images/antenna.svg);
+}
+
+.features-item:nth-child(2)::before{
+  background-image: url(../images/clock.svg);
+}
+
+.features-item:nth-child(3)::before{
+  background-image: url(../images/diagram.svg);
+}
+
 .features-item:last-child{
   margin-right: 0px;
+}
+
+.features-item:last-child::before{
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-item-title{
@@ -486,14 +502,10 @@ margin-right:0px;
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   border:transparent; 
-}
-
-.button::after{
-  width: 20px;
-  height: 20px;
-  content: "";
-  background-color: white;
-  margin-left:7px;
+  background-image: url(../images/sendicon.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 85% 50%;
 }
 
 /*ПОРТФОЛИО*/
