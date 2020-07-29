@@ -633,14 +633,10 @@ margin-bottom:0px;
   position: relative;
 }
 
-.portfolio-item-presenter{
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
-  padding-bottom:20px;
-}
-
 .portfolio-item-title{
+  padding-left:24px;
+  padding-top:20px;
+  padding-right:24px;
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -652,6 +648,9 @@ margin-bottom:0px;
 .portfolio-item-text{
   font-size: 16px;
   line-height: 1.87;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
   color: var(--text-main-color);
   text-align: left;
 }
