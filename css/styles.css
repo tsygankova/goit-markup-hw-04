@@ -12,6 +12,7 @@
 --footer-links-color:rgba(255,255,255,0.6);
 --logo-color:#2196F3;
 --section-color:#f5f4fa;
+--icon-color:#AFB1B8;
 }
 
  /*глобальный border-box*/
@@ -66,6 +67,10 @@ h1,h2,h3,p{
 
 h2{
   margin-bottom:50px;
+}
+
+a:hover svg{
+  fill:var(--title-dark-theme-color)
 }
 
 /*header*/
@@ -135,6 +140,7 @@ span{color:var(--logo-color);}
   align-items: center;
 }
 
+/*
 .header-email::before, .header-phone::before{
   width:20px;
   height: 20px;
@@ -151,7 +157,7 @@ span{color:var(--logo-color);}
 
 .header-phone::before{
   background-image: url(../images/smartphone.svg);
-  }
+  }*/
 
 .header-email-link, 
 .header-phone-link{
@@ -389,11 +395,13 @@ span{color:var(--logo-color);}
 }
 
 .social-list-item{
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding:12px;
   margin-right: 10px;
+  border-radius: 50%;
+  background-color: transparent;
 }
 
 .social-list-item.last-child link{
@@ -403,8 +411,16 @@ margin-right:0px;
 .social-icon{
   width: 20px;
   height: 20px;
+  fill: var(--icon-color);
 }
 
+.social-list-item:hover{
+  background-color: var(--accent-color);
+}
+
+.social-list-item .social-icon:hover{
+  fill:var(--title-dark-theme-color);
+}
 /*КЛИЕНТЫ*/
 .clients-section{
   padding-bottom: 94px;
@@ -516,6 +532,10 @@ margin-right:0px;
   fill: var(--title-dark-theme-color)
 }
 
+.socialmedia-item:hover{
+  background-color: var(--accent-color);
+}
+
 .subscription-form{
   display:flex;
   width:570px;
@@ -537,10 +557,11 @@ margin-right:0px;
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   border:transparent; 
+  /*
   background-image: url(../images/sendicon.svg);
   background-size: auto;
   background-repeat: no-repeat;
-  background-position: 85% 50%;
+  background-position: 85% 50%;*/
 }
 
 /*ПОРТФОЛИО*/
