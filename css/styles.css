@@ -140,6 +140,16 @@ span{color:var(--logo-color);}
   align-items: center;
 }
 
+.email-icon, .phone-icon{
+  fill:var(--icon-color)
+}
+
+.email-icon:hover, 
+.email-icon:focus, 
+.phone-icon:hover, 
+.phone-icon:focus{
+fill:var(--accent-color)
+}
 /*
 .header-email::before, .header-phone::before{
   width:20px;
@@ -563,7 +573,7 @@ margin-right:0px;
 }
 
 .button, .button:hover, .button:focus{
-  display: block;
+  display: flex;
   margin: 0 auto;
   min-width:200px;
   height:50px;
@@ -583,6 +593,13 @@ margin-right:0px;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: 85% 50%;*/
+}
+
+.sendicon{
+width:24px;
+height: 24px;
+fill:var(--hover-buttons-text);
+margin:10px;
 }
 
 /*ПОРТФОЛИО*/
