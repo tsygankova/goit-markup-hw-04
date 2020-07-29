@@ -487,8 +487,7 @@ margin-right:0px;
 .social-footer{
   display:flex;
   flex-direction:column;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width:300px;
   padding-right: 94px;
 }
@@ -501,12 +500,19 @@ margin-right:0px;
   margin-right: 0px;
 }
 
+.socialmedia-item{
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--text-main-color);
+  justify-content: center;
+  align-items: center;
+}
+
 .socialmedia-icon{
   width:20px;
   height:20px;
-  padding:12px;
-  border-radius: 50%;
-  background-color: var(--text-main-color);
   fill: var(--title-dark-theme-color)
 }
 
