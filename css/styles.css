@@ -225,6 +225,15 @@ span{color:var(--logo-color);}
   border:transparent;
 }
 
+.modal-btn{
+
+}
+
+.modal-btn:hover,
+.modal-btn:focus{
+
+}
+
 /*ФИЧИ*/
 
 .features-section{
@@ -415,10 +424,6 @@ margin-right:0px;
 
 .social-list-item-linkedin{
   background-image: url(../images/linkedin.svg);
-}
-
-.social-list{
-  
 }
 
 .twitter{
@@ -619,8 +624,16 @@ margin-right:0px;
 .portfolio-piece:nth-last-child(-n+3){
 margin-bottom:0px;
 }
-.portfolio-image{
-  margin-bottom: 20px;
+
+.portfolio-container{
+  position: relative;
+}
+
+.portfolio-item-presenter{
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom:20px;
 }
 
 .portfolio-item-title{
@@ -639,10 +652,15 @@ margin-bottom:0px;
   text-align: left;
 }
 
+/*
+.portfolio-item:hover, .portfolio-item.focus{
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}*/
+
 .portfolio-item-hover-text{
   color: var(--text-main-color);
-  text-align: left;
-}
+  text-align: left;}
+  
 
 .portfolio-item-hover-text:hover{
   font-size: 18px;
@@ -650,4 +668,19 @@ margin-bottom:0px;
   color:var(--hover-buttons-text);
   background-color: rgba(33, 150, 243, 1);
   text-align: left;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 370px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 60px;
+  padding-bottom: 66px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
+
+.portfolio-container:hover{
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
