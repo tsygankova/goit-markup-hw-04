@@ -225,15 +225,6 @@ span{color:var(--logo-color);}
   border:transparent;
 }
 
-.modal-btn{
-
-}
-
-.modal-btn:hover,
-.modal-btn:focus{
-
-}
-
 /*ФИЧИ*/
 
 .features-section{
@@ -356,10 +347,9 @@ span{color:var(--logo-color);}
   margin-right:30px;
   margin-bottom:0px;
   background: #FFFFFF;
-/* material shadow v1 */
-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-border-radius: 0px 0px 4px 4px;
-padding-bottom: 38px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 38px;
 }
 
 .team-member.last-child{
@@ -406,35 +396,13 @@ padding-bottom: 38px;
   margin-right: 10px;
 }
 
-.social-list-item.last-child{
+.social-list-item.last-child link{
 margin-right:0px;
 }
 
-.social-list-item-instagram{
-  background-image: url(../images/instagram.svg);
-}
-
-.social-list-item-twitter{
-  background-image: url(../images/twitter.svg);
-}
-
-.social-list-item-facebook{
-  background-image: url(../images/facebook.svg);
-}
-
-.social-list-item-linkedin{
-  background-image: url(../images/linkedin.svg);
-}
-
-.twitter{
+.social-icon{
   width: 20px;
   height: 20px;
-  stroke-width: 3px;
-  fill: red;
-}
-
-.twitter:focus{
-  fill:blue;
 }
 
 /*КЛИЕНТЫ*/
@@ -531,6 +499,15 @@ margin-right:0px;
 
 .socialmedia:last-child{
   margin-right: 0px;
+}
+
+.socialmedia-icon{
+  width:20px;
+  height:20px;
+  padding:12px;
+  border-radius: 50%;
+  background-color: var(--text-main-color);
+  fill: var(--title-dark-theme-color)
 }
 
 .subscription-form{
