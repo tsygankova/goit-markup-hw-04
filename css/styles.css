@@ -131,7 +131,8 @@ span{color:var(--logo-color);}
 }
 
 .email-icon, .phone-icon{
-  fill:var(--text-main-color)
+  fill:var(--text-main-color);
+  margin-right:10px;
 }
 
 .email-icon:hover, 
@@ -141,30 +142,11 @@ span{color:var(--logo-color);}
 fill:var(--accent-color)
 }
 
-.header-email, .header-phone{
+.header-email-link, .header-phone-link{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/*
-.header-email::before, .header-phone::before{
-  width:20px;
-  height: 20px;
-  margin-right: 5px;
-  background-repeat:no-repeat;
-  background-position: 50% 50%;
-  content: "";
-  cursor: pointer;
-}
-
-.header-email::before{
-  background-image: url(../images/envelope.svg);
-}
-
-.header-phone::before{
-  background-image: url(../images/smartphone.svg);
-  }*/
 
 .header-email-link, 
 .header-phone-link{
@@ -184,6 +166,10 @@ fill:var(--accent-color)
   color: var(--accent-color);
 }
 
+.header-email-link:hover .email-icon,
+.header-phone-link:hover .phone-icon{
+  fill:var(--accent-color)
+}
 /*HERO*/
 .hero{
   text-align:center;
@@ -421,11 +407,12 @@ margin-right:0px;
   fill: var(--icon-color);
 }
 
-.social-list-item:hover{
+.social-list-item:hover, .social-list-item:focus{
   background-color: var(--accent-color);
 }
 
-.social-list-item .social-icon:hover{
+.social-list-item:hover .social-icon,
+.social-list-item:focus .social-icon{
   fill:var(--title-dark-theme-color);
 }
 /*КЛИЕНТЫ*/
@@ -442,7 +429,7 @@ margin-right:0px;
   display:flex;
   width:170px;
   height:90px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icon-color);
   box-sizing: border-box;
   border-radius: 4px;
   margin-right: 30px;
@@ -458,11 +445,11 @@ margin-right:0px;
   fill:var(--icon-color)
   }
 
-  .client:hover{
+  .client:hover, .client:focus{
     border-color: var(--accent-color);
   }
 
-  .client-logo:hover{
+  .client:hover .client-logo, .client:focus .client-logo{
     fill:var(--accent-color)
   }
 
@@ -560,8 +547,12 @@ margin-right:0px;
   fill: var(--title-dark-theme-color)
 }
 
-.socialmedia-item:hover{
+.socialmedia-item:hover, .social-media-item:focus{
   background-color: var(--accent-color);
+}
+
+.socialmedia-item:hover .socialmedia-icon, .social-media-item:focus .socialmedia-icon{
+  fill:var(--hover-buttons-text);
 }
 
 .subscription-form{
