@@ -15,6 +15,8 @@
 --icon-color:#AFB1B8;
 --business-item-background: rgba(47, 48, 58, 0.8);
 --footer-social-background: rgba(255, 255, 255, 0.1);
+--portfolio-color:rgba(33, 150, 243, 0.9);
+--portfolio-border-color: #ECECEC;
 }
 
  /*глобальный border-box*/
@@ -741,8 +743,8 @@ margin-bottom:0px;
       width: 100%;
       padding-right: 24px;
       padding-left: 24px;
-      padding-top: 65px;
-      padding-bottom: 70px;
+      padding-top: 60px;
+      padding-bottom: 66px;
       transition-property: transform;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -750,20 +752,9 @@ margin-bottom:0px;
 
 .portfolio-piece:hover .portfolio-item-hover-text,
 .portfolio-piece:focus .portfolio-item-hover-text{
-  font-size: 18px;
-  line-height: 1.56;
-  color:var(--hover-buttons-text);
-  background-color: rgba(33, 150, 243, 1);
-  text-align: left;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 370px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 60px;
-  padding-bottom: 66px;
+  top: 50%;
+  left: 0%;
+  transform: translateY(-50%);
 }
 
 
